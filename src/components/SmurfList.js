@@ -2,7 +2,6 @@ import React from 'react';
 import Smurf from './Smurf';
 import { connect } from 'react-redux';
 
-
  const SmurfList = (props)=> {
     const {smurfs, isLoading} = props;
 
@@ -14,11 +13,8 @@ import { connect } from 'react-redux';
             {smurfs.map(smurf => (
                 <Smurf smurf={smurf} key={smurf.id}/>
                 ))}
-        </div>
-        
+        </div>  
     )
-   
-   
 }
 
 const mapStateToProps = state => {

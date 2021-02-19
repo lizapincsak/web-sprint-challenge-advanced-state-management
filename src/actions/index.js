@@ -3,7 +3,7 @@ import axios from 'axios';
 export const FETCH_SMURF_START = "FETCH_SMURF_START";
 export const FETCH_SMURF_SUCCESS = "FETCH_SMURF_SUCCESS";
 export const FETCH_SMURF_FAIL = "FETCH_SMURF_FAIL";
-export const FETCH_SMURF_FAIL_MESSAGE = "FETCH_SMURF_FAIL_MESSAGE";
+// export const FETCH_SMURF_FAIL_MESSAGE = "FETCH_SMURF_FAIL_MESSAGE";
 export const ADD_SMURF = "ADD_SMURF";
 
 export const fetchSmurfs = () => {
@@ -18,7 +18,7 @@ export const fetchSmurfs = () => {
             .catch((err) => {
                 console.log(err)
                 dispatch({ type: FETCH_SMURF_FAIL, payload: err})
-                dispatch({type: FETCH_SMURF_FAIL_MESSAGE, payload: {message: "Oops no more smurfs"}})
+                // dispatch({type: FETCH_SMURF_FAIL_MESSAGE, payload: {message: "Oops no more smurfs"}})
             })
 }
 }
@@ -34,7 +34,7 @@ export const addSmurf = (newSmurf) => {
         .catch((err) => {
             console.log(err)
             dispatch({ type: FETCH_SMURF_FAIL, payload: err})
-            dispatch({type: FETCH_SMURF_FAIL_MESSAGE, payload: {message: "Oops cannot add smurf"}})
+            // dispatch({type: FETCH_SMURF_FAIL_MESSAGE, payload: {message: "Oops cannot add smurf"}})
         })
     }
 }
