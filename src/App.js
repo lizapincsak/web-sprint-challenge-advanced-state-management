@@ -14,7 +14,6 @@ class App extends Component {
         <Header />
 
         <main>
-          <h1>Smurfette!</h1>
           <SmurfList/>
           <AddForm/>
         </main>
