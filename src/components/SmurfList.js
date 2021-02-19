@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
     const {smurfs, isLoading} = props;
 
     if (isLoading) {
-        return <h1>One moment please: {isLoading}</h1>;
+        return <h1>{isLoading}</h1>;
     }
     return (
         <div className="listContainer">
